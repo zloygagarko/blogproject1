@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'cblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'project_db', # database name in RDS is written here
+        'NAME': 'rds-cluster-instance-1', # database name in RDS is written here
         'USER': 'admin', # database master username in RDS is written here
-        'PASSWORD': 'admin12345',
-        'HOST': 'terraform-20240805163034768900000001.chswaeeaatrr.us-east-2.rds.amazonaws.com',  # database endpoint is written here
+        'PASSWORD': 'Admin12345',
+        'HOST': 'rds-cluster-instance-1.chswaeeaatrr.us-east-2.rds.amazonaws.com',  # database endpoint is written here
         'PORT': '3306' # database port is written here
     }
 }
